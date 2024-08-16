@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const films = require('./src/data/films.json');
 
-app.get('/films', (req,res) => {
+app.get('/films', (res) => {
     return res.json(films)
 });
 
